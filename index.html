@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safe Harem | Trusted Support for Girls</title>
+    <meta name="description" content="Safe Harem is a supportive digital space for girls to get advice, choose trusted support, read motivating books, and learn new things." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="termsNotification" class="terms-overlay" aria-live="assertive" aria-hidden="false">
+      <div class="terms-modal" role="dialog" aria-modal="true" aria-labelledby="termsTitle">
+        <p class="eyebrow">Safe Harem</p>
+        <h2 id="termsTitle">Terms & Conditions</h2>
+        <div class="terms-content">
+          <p>Safe Harem is designed for girls aged 13 to 25.</p>
+          <p>All users must treat others with respect, privacy, and kindness.</p>
+          <p>We encourage trusted support from NGOs, religious leaders, and community mentors.</p>
+          <p>Personal information should only be shared with care and consent.</p>
+          <p>In urgent situations, contact a trusted adult or emergency support.</p>
+        </div>
+
+        <label class="terms-check" for="agreeTerms">
+          <input id="agreeTerms" type="checkbox" />
+          <span>I agree to the terms and conditions and understand I must use this website responsibly.</span>
+        </label>
+
+        <div class="terms-actions">
+          <button type="button" id="declineTerms" class="decline-btn">I do not agree</button>
+          <button type="button" id="acceptTerms" class="primary-btn" disabled>Access Website</button>
+        </div>
+
+        <p id="termsNotice" class="terms-notice">You must agree before using Safe Harem.</p>
+      </div>
+    </div>
+
+    <div class="page-shell">
+      <header class="topbar container">
+        <a href="#home" class="brand" aria-label="Safe Harem home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 120 120" role="img" aria-label="Safe Harem logo">
+              <defs>
+                <linearGradient id="logoGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#ff9fc5" />
+                  <stop offset="50%" stop-color="#c095ff" />
+                  <stop offset="100%" stop-color="#6aa8ff" />
+                </linearGradient>
+              </defs>
+              <circle cx="60" cy="60" r="52" fill="url(#logoGrad)" opacity="0.18" />
+              <circle cx="60" cy="60" r="46" fill="none" stroke="url(#logoGrad)" stroke-width="5" />
+              <path d="M36 72c0-24 10-38 24-38 14 0 24 14 24 38 0 16-9 28-24 28-15 0-24-12-24-28zm13 0c0 9 5 18 11 18 7 0 11-9 11-18 0-12-5-19-11-19-6 0-11 7-11 19z" fill="url(#logoGrad)"/>
+              <path d="M51 44h18v13H51zM51 63h18v13H51z" fill="#48306b" opacity="0.8"/>
+              <path d="M32 82c12 8 23 12 28 12s16-4 28-12" fill="none" stroke="#48306b" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-text">
+            <strong>SAFE</strong>
+            <em>HAREM</em>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#support">Support</a>
+          <a href="#advice">Ask for Advice</a>
+          <a href="#learn">Learn</a>
+          <a href="#terms">Terms</a>
+        </nav>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+
+      <main>
+        <section id="home" class="hero container">
+          <div class="hero-copy">
+            <p class="eyebrow">Confidential care • growth • guidance</p>
+            <h1>Safe spaces for girls to speak, heal, and rise.</h1>
+            <p class="lead">
+              Safe Harem helps young girls from age 13 to 25 share personal concerns,
+              request advice, and access trustworthy support from NGOs, religious leaders,
+              and local guidance channels.
+            </p>
+            <div class="cta-row">
+              <a class="primary-btn" href="#advice">Ask for Advice</a>
+              <a class="ghost-btn" href="books.html" target="_blank" rel="noreferrer">Read Motivating Books</a>
+            </div>
+
+            <ul class="trust-points">
+              <li>Private, respectful guidance</li>
+              <li>Trusted support choices</li>
+              <li>Learning and confidence-building</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Support summary card">
+            <div class="mini-card card-one">
+              <span class="label">Support</span>
+              <strong>24/7</strong>
+              <small>Guidance pathways</small>
+            </div>
+            <div class="mini-card card-two">
+              <span class="label">Age range</span>
+              <strong>13–25</strong>
+              <small>Young women</small>
+            </div>
+            <div class="main-card">
+              <div class="avatar-ring">
+                <div class="avatar">SH</div>
+              </div>
+              <h3>Trusted community</h3>
+              <p>Speak safely, connect kindly, and learn courageously.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats container" aria-label="Safe Harem statistics">
+          <div class="stat-box">
+            <strong>3x</strong>
+            <span>Support pathways</span>
+          </div>
+          <div class="stat-box">
+            <strong>100%</strong>
+            <span>Confidential care</span>
+          </div>
+          <div class="stat-box">
+            <strong>13–25</strong>
+            <span>Age-inclusive space</span>
+          </div>
+          <div class="stat-box">
+            <strong>Daily</strong>
+            <span>Motivation & learning</span>
+          </div>
+        </section>
+
+        <section id="support" class="section container">
+          <div class="section-heading">
+            <p class="eyebrow">Who can help?</p>
+            <h2>Choose the trusted people you feel safe with</h2>
+          </div>
+
+          <div class="support-grid">
+            <article class="support-card">
+              <div class="icon-wrap pink">NG</div>
+              <h3>NGOs</h3>
+              <p>Professional support, counseling, legal guidance, and safe referral services.</p>
+            </article>
+
+            <article class="support-card">
+              <div class="icon-wrap blue">MS</div>
+              <h3>Muslim Leaders</h3>
+              <p>Faith-based advice, community mentorship, and moral guidance with compassion.</p>
+            </article>
+
+            <article class="support-card">
+              <div class="icon-wrap purple">CH</div>
+              <h3>Christian Leaders</h3>
+              <p>Spiritual comfort, mentorship, and encouraging conversations rooted in faith.</p>
+            </article>
+
+            <article class="support-card">
+              <div class="icon-wrap orchid">TR</div>
+              <h3>Traditional Leaders</h3>
+              <p>Community-centered guidance and respectful mediation where cultural support matters.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="advice" class="advice-section container">
+          <div class="section-heading left">
+            <p class="eyebrow">Need direction?</p>
+            <h2>Share your concern privately</h2>
+          </div>
+
+          <div class="advice-grid">
+            <form id="adviceForm" class="advice-form">
+              <div class="field-row two-col">
+                <label>
+                  Full name
+                  <input type="text" name="name" placeholder="Your name" />
+                </label>
+                <label>
+                  Age range
+                  <select name="ageRange">
+                    <option value="13-15">13-15</option>
+                    <option value="16-18">16-18</option>
+                    <option value="19-21">19-21</option>
+                    <option value="22-25">22-25</option>
+                  </select>
+                </label>
+              </div>
+
+              <label>
+                I trust this kind of support most
+                <select name="supportType">
+                  <option value="NGO">NGO</option>
+                  <option value="Muslim Leader">Muslim Leader</option>
+                  <option value="Christian Leader">Christian Leader</option>
+                  <option value="Traditional Leader">Traditional Leader</option>
+                </select>
+              </label>
+
+              <label>
+                What would you like help with?
+                <textarea name="message" rows="6" placeholder="Tell us what you are going through, what you need, or what kind of advice you want."></textarea>
+              </label>
+
+              <label class="checkbox-row">
+                <input type="checkbox" name="consent" required />
+                <span>I agree that this message will be treated with confidentiality and respect.</span>
+              </label>
+
+              <button type="submit" class="primary-btn wide">Send Confidentially</button>
+              <p id="formStatus" class="form-status" aria-live="polite"></p>
+            </form>
+
+            <aside class="support-panel">
+              <h3>Topics you can talk about</h3>
+              <ul>
+                <li>School stress and exam pressure</li>
+                <li>Family conflict and communication</li>
+                <li>Emotional wellbeing</li>
+                <li>Relationship questions</li>
+                <li>Personal safety and protection</li>
+                <li>Spiritual and moral guidance</li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+        <section id="learn" class="section container">
+          <div class="section-heading">
+            <p class="eyebrow">Motivating reads</p>
+            <h2>Grow with books, lessons, and confidence</h2>
+          </div>
+
+          <div class="book-grid">
+            <article class="book-card">
+              <span class="tag">Self-confidence</span>
+              <h3>Think and Grow Rich</h3>
+              <p>Build a stronger mindset and learn the value of purpose, discipline, and focus.</p>
+            </article>
+
+            <article class="book-card">
+              <span class="tag">Personal growth</span>
+              <h3>The Power of Habit</h3>
+              <p>Understand daily routines and create healthy patterns that support success.</p>
+            </article>
+
+            <article class="book-card">
+              <span class="tag">Well-being</span>
+              <h3>The Gifts of Imperfection</h3>
+              <p>Discover self-worth and learn to live with courage, compassion, and authenticity.</p>
+            </article>
+
+            <article class="book-card">
+              <span class="tag">Purpose</span>
+              <h3>You Are a Badass</h3>
+              <p>Use confidence, action, and clarity to shape a future you believe in.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="terms" class="terms-section container">
+          <div class="section-heading">
+            <p class="eyebrow">Important notice</p>
+            <h2>Terms & Conditions</h2>
+          </div>
+
+          <div class="terms-box">
+            <ul>
+              <li>Safe Harem is designed for girls between the ages of 13 and 25.</li>
+              <li>All users must respect privacy, kindness, and consent in conversations.</li>
+              <li>Messages are intended for emotional support, guidance, and learning, not for dangerous or abusive use.</li>
+              <li>Users should never share confidential personal details that they are not comfortable sharing.</li>
+              <li>In urgent situations, users should contact a trusted adult, local emergency support, or a certified professional.</li>
+              <li>We encourage users to seek advice from trusted people, such as NGOs, faith leaders, and community mentors.</li>
+              <li>Safe Harem promotes respectful, safe, and inclusive support for all young people.</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer container">
+        <div>
+          <span class="brand-mark tiny" aria-hidden="true">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <defs>
+                <linearGradient id="logoGradFooter" x1="0%" x2="100%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#ff9fc5" />
+                  <stop offset="50%" stop-color="#c095ff" />
+                  <stop offset="100%" stop-color="#6aa8ff" />
+                </linearGradient>
+              </defs>
+              <circle cx="60" cy="60" r="52" fill="url(#logoGradFooter)" opacity="0.2" />
+              <circle cx="60" cy="60" r="46" fill="none" stroke="url(#logoGradFooter)" stroke-width="5" />
+              <path d="M36 72c0-24 10-38 24-38 14 0 24 14 24 38 0 16-9 28-24 28-15 0-24-12-24-28zm13 0c0 9 5 18 11 18 7 0 11-9 11-18 0-12-5-19-11-19-6 0-11 7-11 19z" fill="url(#logoGradFooter)"/>
+              <path d="M51 44h18v13H51zM51 63h18v13H51z" fill="#48306b" opacity="0.8"/>
+            </svg>
+          </span>
+          <span class="footer-brand">Safe Harem</span>
+        </div>
+        <p>Helping girls feel seen, supported, and strong.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
